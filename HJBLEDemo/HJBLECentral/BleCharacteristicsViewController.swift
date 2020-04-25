@@ -17,6 +17,14 @@ class BleCharacteristicsViewController: UIViewController {
         BLEManager.shared.discoverCharacteristicsForserviceBlok = { [weak self] in
             self?.tableView.reloadData()
         }
+       
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+         
+    }
+    deinit {
+        BLEManager.shared.selectBleData.characteristics.removeAll()
     }
     fileprivate func setupUI() {
         self.view.addSubview(self.tableView)
@@ -46,8 +54,13 @@ class BleCharacteristicsViewController: UIViewController {
 }
 extension BleCharacteristicsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let character  = BLEManager.shared.selectBleData.characteristics[indexPath.row]
-        BLEManager.shared.writeValue(dict: ["name":"thj"], characteristic: character)
+//        BLEManager.shared.getVersion(characteristic: character)
+        BLEManager.shared.selectBleData.characteristic = character
+        self.navigationController?.pushViewController(BLEConnectSuccessViewController(), animated: true)
+//        BLEManager.shared.writeValue(dict: ["name":"thj"], characteristic: character)
+        
         
     }
 }
@@ -60,7 +73,23 @@ extension BleCharacteristicsViewController: UITableViewDataSource {
         let cell = UITableViewCell()
         ///CBCharacteristic
         let character = BLEManager.shared.selectBleData.characteristics[indexPath.row]
-        cell.textLabel?.text = (BLEManager.shared.selectBleData.name ?? "")  + character.uuid.uuidString
+        var str = ""
+        switch character.properties {
+        case .read:
+            str = "可读"
+        case .write, .writeWithoutResponse:
+            str = "可写"
+        case .broadcast:
+            str = "广播"
+//        case .notify:
+//            str = "notify"
+//        case .notifyEncryptionRequired:
+//            str = "notifyEncryptionRequired"
+        default:
+            break
+        }
+        cell.textLabel?.text =  str + "UUID:" + character.uuid.uuidString
+        cell.textLabel?.numberOfLines = 0
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

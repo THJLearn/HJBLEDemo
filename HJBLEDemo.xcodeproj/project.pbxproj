@@ -15,16 +15,17 @@
 		2A125DFE24527D5100376E04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A125DFC24527D5100376E04 /* LaunchScreen.storyboard */; };
 		2A125E0924527D5100376E04 /* HJBLEDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A125E0824527D5100376E04 /* HJBLEDemoTests.swift */; };
 		2A125E1424527D5200376E04 /* HJBLEDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A125E1324527D5200376E04 /* HJBLEDemoUITests.swift */; };
-		2A125E232452809D00376E04 /* BleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A125E212452809D00376E04 /* BleViewController.swift */; };
-		2A125E242452809D00376E04 /* BleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A125E222452809D00376E04 /* BleViewController.xib */; };
-		2A9DBCED2452B83E001A6391 /* BLEConnectSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DBCEB2452B83E001A6391 /* BLEConnectSuccessViewController.swift */; };
-		2A9DBCEE2452B83E001A6391 /* BLEConnectSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9DBCEC2452B83E001A6391 /* BLEConnectSuccessViewController.xib */; };
-		2A9DBCF42452BBE0001A6391 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DBCF32452BBE0001A6391 /* BLEManager.swift */; };
-		2A9DBCF72452D8E7001A6391 /* BleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DBCF52452D8E7001A6391 /* BleDetailViewController.swift */; };
-		2A9DBCF82452D8E7001A6391 /* BleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9DBCF62452D8E7001A6391 /* BleDetailViewController.xib */; };
-		2A9DBCFA2452DDB2001A6391 /* Parameteter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DBCF92452DDB2001A6391 /* Parameteter.swift */; };
-		2A9DBCFD2452EF45001A6391 /* BleCharacteristicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DBCFB2452EF45001A6391 /* BleCharacteristicsViewController.swift */; };
-		2A9DBCFE2452EF45001A6391 /* BleCharacteristicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9DBCFC2452EF45001A6391 /* BleCharacteristicsViewController.xib */; };
+		2ACA66F62453DE5D00F1F1C6 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA66EA2453DE5D00F1F1C6 /* BLEManager.swift */; };
+		2ACA66FF2453DE5D00F1F1C6 /* Parameteter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA66F52453DE5D00F1F1C6 /* Parameteter.swift */; };
+		2ACA670A2453DE8A00F1F1C6 /* BleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACA67012453DE8A00F1F1C6 /* BleViewController.xib */; };
+		2ACA670B2453DE8A00F1F1C6 /* BleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA67022453DE8A00F1F1C6 /* BleDetailViewController.swift */; };
+		2ACA670C2453DE8A00F1F1C6 /* BleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA67032453DE8A00F1F1C6 /* BleViewController.swift */; };
+		2ACA670D2453DE8A00F1F1C6 /* BLEConnectSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACA67042453DE8A00F1F1C6 /* BLEConnectSuccessViewController.xib */; };
+		2ACA670E2453DE8A00F1F1C6 /* BLEConnectSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA67052453DE8A00F1F1C6 /* BLEConnectSuccessViewController.swift */; };
+		2ACA670F2453DE8A00F1F1C6 /* BleCharacteristicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA67062453DE8A00F1F1C6 /* BleCharacteristicsViewController.swift */; };
+		2ACA67102453DE8A00F1F1C6 /* BleCharacteristicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACA67072453DE8A00F1F1C6 /* BleCharacteristicsViewController.xib */; };
+		2ACA67112453DE8A00F1F1C6 /* BleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACA67082453DE8A00F1F1C6 /* BleDetailViewController.xib */; };
+		2ACA67152453E02600F1F1C6 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA67142453E02600F1F1C6 /* Tool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,16 +60,20 @@
 		2A125E0F24527D5200376E04 /* HJBLEDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJBLEDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A125E1324527D5200376E04 /* HJBLEDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJBLEDemoUITests.swift; sourceTree = "<group>"; };
 		2A125E1524527D5200376E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A125E212452809D00376E04 /* BleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleViewController.swift; sourceTree = "<group>"; };
-		2A125E222452809D00376E04 /* BleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BleViewController.xib; sourceTree = "<group>"; };
-		2A9DBCEB2452B83E001A6391 /* BLEConnectSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEConnectSuccessViewController.swift; sourceTree = "<group>"; };
-		2A9DBCEC2452B83E001A6391 /* BLEConnectSuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEConnectSuccessViewController.xib; sourceTree = "<group>"; };
-		2A9DBCF32452BBE0001A6391 /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
-		2A9DBCF52452D8E7001A6391 /* BleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleDetailViewController.swift; sourceTree = "<group>"; };
-		2A9DBCF62452D8E7001A6391 /* BleDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BleDetailViewController.xib; sourceTree = "<group>"; };
-		2A9DBCF92452DDB2001A6391 /* Parameteter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameteter.swift; sourceTree = "<group>"; };
-		2A9DBCFB2452EF45001A6391 /* BleCharacteristicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleCharacteristicsViewController.swift; sourceTree = "<group>"; };
-		2A9DBCFC2452EF45001A6391 /* BleCharacteristicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BleCharacteristicsViewController.xib; sourceTree = "<group>"; };
+		2ACA66EA2453DE5D00F1F1C6 /* BLEManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		2ACA66F52453DE5D00F1F1C6 /* Parameteter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameteter.swift; sourceTree = "<group>"; };
+		2ACA67012453DE8A00F1F1C6 /* BleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BleViewController.xib; sourceTree = "<group>"; };
+		2ACA67022453DE8A00F1F1C6 /* BleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleDetailViewController.swift; sourceTree = "<group>"; };
+		2ACA67032453DE8A00F1F1C6 /* BleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleViewController.swift; sourceTree = "<group>"; };
+		2ACA67042453DE8A00F1F1C6 /* BLEConnectSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLEConnectSuccessViewController.xib; sourceTree = "<group>"; };
+		2ACA67052453DE8A00F1F1C6 /* BLEConnectSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEConnectSuccessViewController.swift; sourceTree = "<group>"; };
+		2ACA67062453DE8A00F1F1C6 /* BleCharacteristicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleCharacteristicsViewController.swift; sourceTree = "<group>"; };
+		2ACA67072453DE8A00F1F1C6 /* BleCharacteristicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BleCharacteristicsViewController.xib; sourceTree = "<group>"; };
+		2ACA67082453DE8A00F1F1C6 /* BleDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BleDetailViewController.xib; sourceTree = "<group>"; };
+		2ACA67122453E02500F1F1C6 /* HJBLEDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HJBLEDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		2ACA67132453E02600F1F1C6 /* Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		2ACA67142453E02600F1F1C6 /* Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		2ACA67162454227200F1F1C6 /* CBUUID+StringExtraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBUUID+StringExtraction.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,19 +124,12 @@
 		2A125DF024527D4900376E04 /* HJBLEDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2ACA67002453DE8A00F1F1C6 /* HJBLECentral */,
+				2ACA67092453DE8A00F1F1C6 /* HJBLEPeripheral */,
+				2ACA66E92453DE5D00F1F1C6 /* HJBLE */,
 				2A125DF124527D4900376E04 /* AppDelegate.swift */,
-				2A9DBCF92452DDB2001A6391 /* Parameteter.swift */,
 				2A125DF324527D4900376E04 /* SceneDelegate.swift */,
-				2A9DBCF32452BBE0001A6391 /* BLEManager.swift */,
 				2A125DF524527D4900376E04 /* ViewController.swift */,
-				2A9DBCFB2452EF45001A6391 /* BleCharacteristicsViewController.swift */,
-				2A9DBCFC2452EF45001A6391 /* BleCharacteristicsViewController.xib */,
-				2A9DBCF52452D8E7001A6391 /* BleDetailViewController.swift */,
-				2A9DBCF62452D8E7001A6391 /* BleDetailViewController.xib */,
-				2A9DBCEB2452B83E001A6391 /* BLEConnectSuccessViewController.swift */,
-				2A9DBCEC2452B83E001A6391 /* BLEConnectSuccessViewController.xib */,
-				2A125E212452809D00376E04 /* BleViewController.swift */,
-				2A125E222452809D00376E04 /* BleViewController.xib */,
 				2A125DF724527D4900376E04 /* Main.storyboard */,
 				2A125DFA24527D5100376E04 /* Assets.xcassets */,
 				2A125DFC24527D5100376E04 /* LaunchScreen.storyboard */,
@@ -156,6 +154,41 @@
 				2A125E1524527D5200376E04 /* Info.plist */,
 			);
 			path = HJBLEDemoUITests;
+			sourceTree = "<group>";
+		};
+		2ACA66E92453DE5D00F1F1C6 /* HJBLE */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA66EA2453DE5D00F1F1C6 /* BLEManager.swift */,
+				2ACA66F52453DE5D00F1F1C6 /* Parameteter.swift */,
+				2ACA67162454227200F1F1C6 /* CBUUID+StringExtraction.h */,
+				2ACA67132453E02600F1F1C6 /* Tool.h */,
+				2ACA67142453E02600F1F1C6 /* Tool.m */,
+				2ACA67122453E02500F1F1C6 /* HJBLEDemo-Bridging-Header.h */,
+			);
+			path = HJBLE;
+			sourceTree = "<group>";
+		};
+		2ACA67002453DE8A00F1F1C6 /* HJBLECentral */ = {
+			isa = PBXGroup;
+			children = (
+				2ACA67012453DE8A00F1F1C6 /* BleViewController.xib */,
+				2ACA67022453DE8A00F1F1C6 /* BleDetailViewController.swift */,
+				2ACA67032453DE8A00F1F1C6 /* BleViewController.swift */,
+				2ACA67042453DE8A00F1F1C6 /* BLEConnectSuccessViewController.xib */,
+				2ACA67052453DE8A00F1F1C6 /* BLEConnectSuccessViewController.swift */,
+				2ACA67062453DE8A00F1F1C6 /* BleCharacteristicsViewController.swift */,
+				2ACA67072453DE8A00F1F1C6 /* BleCharacteristicsViewController.xib */,
+				2ACA67082453DE8A00F1F1C6 /* BleDetailViewController.xib */,
+			);
+			path = HJBLECentral;
+			sourceTree = "<group>";
+		};
+		2ACA67092453DE8A00F1F1C6 /* HJBLEPeripheral */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HJBLEPeripheral;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +259,7 @@
 				TargetAttributes = {
 					2A125DED24527D4900376E04 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					2A125E0324527D5100376E04 = {
 						CreatedOnToolsVersion = 11.4;
@@ -262,13 +296,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A125E242452809D00376E04 /* BleViewController.xib in Resources */,
+				2ACA670A2453DE8A00F1F1C6 /* BleViewController.xib in Resources */,
 				2A125DFE24527D5100376E04 /* LaunchScreen.storyboard in Resources */,
 				2A125DFB24527D5100376E04 /* Assets.xcassets in Resources */,
-				2A9DBCFE2452EF45001A6391 /* BleCharacteristicsViewController.xib in Resources */,
 				2A125DF924527D4900376E04 /* Main.storyboard in Resources */,
-				2A9DBCEE2452B83E001A6391 /* BLEConnectSuccessViewController.xib in Resources */,
-				2A9DBCF82452D8E7001A6391 /* BleDetailViewController.xib in Resources */,
+				2ACA670D2453DE8A00F1F1C6 /* BLEConnectSuccessViewController.xib in Resources */,
+				2ACA67112453DE8A00F1F1C6 /* BleDetailViewController.xib in Resources */,
+				2ACA67102453DE8A00F1F1C6 /* BleCharacteristicsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +327,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A125E232452809D00376E04 /* BleViewController.swift in Sources */,
-				2A9DBCF42452BBE0001A6391 /* BLEManager.swift in Sources */,
-				2A9DBCED2452B83E001A6391 /* BLEConnectSuccessViewController.swift in Sources */,
-				2A9DBCF72452D8E7001A6391 /* BleDetailViewController.swift in Sources */,
+				2ACA66FF2453DE5D00F1F1C6 /* Parameteter.swift in Sources */,
+				2ACA670C2453DE8A00F1F1C6 /* BleViewController.swift in Sources */,
 				2A125DF624527D4900376E04 /* ViewController.swift in Sources */,
+				2ACA66F62453DE5D00F1F1C6 /* BLEManager.swift in Sources */,
+				2ACA670B2453DE8A00F1F1C6 /* BleDetailViewController.swift in Sources */,
+				2ACA67152453E02600F1F1C6 /* Tool.m in Sources */,
+				2ACA670E2453DE8A00F1F1C6 /* BLEConnectSuccessViewController.swift in Sources */,
 				2A125DF224527D4900376E04 /* AppDelegate.swift in Sources */,
-				2A9DBCFA2452DDB2001A6391 /* Parameteter.swift in Sources */,
-				2A9DBCFD2452EF45001A6391 /* BleCharacteristicsViewController.swift in Sources */,
+				2ACA670F2453DE8A00F1F1C6 /* BleCharacteristicsViewController.swift in Sources */,
 				2A125DF424527D4900376E04 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +509,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7P7WC6V33;
 				INFOPLIST_FILE = HJBLEDemo/Info.plist;
@@ -484,6 +520,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tianhj.HJBLEDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HJBLEDemo/HJBLE/HJBLEDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -493,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7P7WC6V33;
 				INFOPLIST_FILE = HJBLEDemo/Info.plist;
@@ -503,6 +542,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tianhj.HJBLEDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HJBLEDemo/HJBLE/HJBLEDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -16,8 +16,22 @@ class BleViewController: UIViewController {
         BLEManager.shared.centralScanBlok = { [weak self] in
             self?.tableView.reloadData()
         }
+        
 //        centralManager = CBCentralManager.init(delegate: self, queue: nil)
         // Do any additional setup after loading the view.
+    }
+    deinit {
+        BLEManager.shared.cancelPeripheralConnection()
+        BLEManager.shared.names.removeAll()
+        BLEManager.shared.peripherals.removeAll()
+        BLEManager.shared.selectBleData =  SelectBleData()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        BLEManager.shared.names.removeAll()
+        BLEManager.shared.peripherals.removeAll()
+        BLEManager.shared.startScan()
+//        BLEManager.shared.cancelPeripheralConnection()
     }
     fileprivate func setupUI() {
         self.view.addSubview(self.tableView)

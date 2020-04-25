@@ -20,7 +20,8 @@ class BLEConnectSuccessViewController: UIViewController {
 
     @IBAction func sendAction(_ sender: Any) {
         contentTF.resignFirstResponder()
-        
+        let content = (contentTF.text ?? "").isEmpty ? "thjtest" :  contentTF.text
+        BLEManager.shared.writeValue(dict: ["content": content as Any ], characteristic: BLEManager.shared.selectBleData.characteristic)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
