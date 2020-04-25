@@ -14,7 +14,10 @@ class BLEConnectSuccessViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        BLEManager.shared.didUpdateValueForCharacteristicBlok = { [weak self] (info) in
+            
+            self?.resultLabel.text = info as? String
+        }
         // Do any additional setup after loading the view.
     }
 

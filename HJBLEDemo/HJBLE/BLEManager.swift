@@ -28,6 +28,7 @@ class BLEManager: NSObject {
     var centralScanBlok: (() -> ())?
     var discoverCharacteristicsForserviceBlok: (() -> ())?
     var didDiscoverServicesBlock: (() -> ())?
+    var didUpdateValueForCharacteristicBlok: ((_ info:Any) -> ())?
     
     
     public override init() {
@@ -247,6 +248,7 @@ extension BLEManager:CBPeripheralDelegate {
         if let vaue = characteristic.value {
            let info = String.init(data: vaue, encoding: String.Encoding.utf8)
             print("读到的数据为------",info as Any)
+            didUpdateValueForCharacteristicBlok?(info)
         }
     }
     func peripheral(_ peripheral: CBPeripheral, didUpdateNotificationStateFor characteristic: CBCharacteristic, error: Error?) {
